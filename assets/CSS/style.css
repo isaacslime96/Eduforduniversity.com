@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+::before,
+::after{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   outline: none;
+}
+
+:root{
+    /* background-color */
+    --bg-white: #fff;
+    --bg-red: #ff0000;
+
+    /* Text Colors */
+    --primary-text: #fff;
+    --secondary-color: red;
+    --light-color: #e2f6de;
+    --dark-color: #000;
+    --text-gray: #808080;
+
+    /* Font-Family */
+    --primary-font: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+}
+
+body,
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+.contact-section textarea{
+    resize: none;
+}
+
+embed,
+iframe,
+img,
+object{
+    max-width: 100%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+button{
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover,
+button:hover{
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-white);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-title{
+    font-size: 3.5rem;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.section-subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    color: var(--text-gray);
+    letter-spacing: -0.7px;
+}
+
+/* 01 navbar css */
+.navbar .navbar-brand{
+    width: 150px;
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--primary-text);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--primary-font);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--secondary-color);
+}
+.navbar .navbar-toggler{
+    color: var(--bg-red);
+    font-size: 2.5rem;
+    height: 2.7rem;
+    padding: 0;
+}
+.navbar .navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;  
+}
+.navbar-scrolled{
+  position: fixed;
+  top: 0.4rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: auto; 
+  z-index: 999; 
+  transition: 0.3s all ease-in-out;
+}
+
+/* 02 Banner section */
+.banner-section{
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--primary-text);
+}
+.banner-title{
+    font-size: 10rem;
+    font-family: var(--primary-font);
+    font-weight: 800;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+.banner-subtitle{
+    font-size: 1.8rem;  
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    margin-left: 25px;
+}
+
+/* 03 Course section */
+.course-title{
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}
+.course-subtitle{
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    letter-spacing: -0.7px;
+}
+
+/* 04 Campus Section */
+.layer{
+	position: relative;
+}
+.layer img{
+    width: 300px;
+}
+.layer h3{
+    position: absolute;
+    width: 100%;
+    height: 6%;
+	bottom: 0;
+	left: 49.9%;
+	transform: translateX(-50%);
+    font-size: 3rem;
+    font-family: 'Bruno Ace SC', cursive;
+	opacity: 0;
+	transition: 1s;
+}
+.layer:hover h3{
+	bottom: 50%;
+	opacity: 1;
+}
+
+/* 06 Facilities Section */
+.facilities-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: 'Bruno Ace SC', cursive;
+}
+.facilities-subtitle{
+    font-size: 1.7rem;
+    color: var(--text-gray);
+    font-family: var(--secondary-font);
+    text-align: justify;
+    letter-spacing: -0.7px;
+}
+
+/* 06 Testimonials Section */
+.testimonials-section img{
+    width: 70px;
+}
+.testimonials-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: 'Bruno Ace SC', cursive;
+}
+.testimonials-subtitle{
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    font-family: var(--secondary-font);
+    letter-spacing: -0.7px;
+}
+
+/* 07 Contact Section */
+.contact-section .card-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/banner2.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 50vh;
+    padding: 180px 0;
+}
+.contact-section .card-title{
+    color: var(--primary-text);
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: -0.7px;
+}
+
+
+
+

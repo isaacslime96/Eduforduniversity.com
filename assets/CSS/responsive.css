@@ -1,0 +1,65 @@
+/* Media Query 1200px */
+@media (max-width:1200px) {
+    .banner-title{
+        margin-left: 20px;
+        margin-top: -15px;
+    }
+}
+
+/* Media Query 992px */
+@media (max-width:992px) {   
+    .banner-title{
+        font-size: 9rem;
+        margin-top: -15px;
+    }
+    .banner-subtitle{
+        font-size: 1.6rem;
+    }
+    .facilities-subtitle{
+        text-align: center;
+    }
+    .section-subtitle{
+        font-size: 1.8rem;
+    }
+
+/* Media Query 768px */
+@media (max-width:768px) {
+    .banner-title{
+        font-size: 6rem;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .banner-subtitle{
+        font-size: 1.2rem;
+    }
+    .section-subtitle{
+        font-size: 1.5rem;
+    }
+    .facilities-subtitle{
+        font-size: 1.5rem;
+    }
+    .contact-section .card-title{
+    font-size: 1.5rem;
+   }
+   .contact-section .card-title{
+    font-size: 1.5rem;
+}
+
+/* Media Query 576px */
+@media (max-width:576px) {
+   .banner-title{
+    font-size: 4.5rem;
+    margin-left: 5px;
+    margin-top: 60px;
+   }
+   .banner-subtitle{
+    font-size: 1rem;
+    margin-left: 5px;
+   }
+   .section-subtitle, .facilities-subtitle{
+    font-size: 1rem;
+   }
+   .contact-section .card-title{
+    font-size: 1rem;
+   }
+}
